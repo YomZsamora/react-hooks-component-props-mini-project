@@ -1,14 +1,11 @@
 import React from "react";
 
-function Header({blogName}) {
+function Header(props) {
    return (
-      <React.Fragment>
-         <header>
-            <h1>{blogName}</h1>
-         </header>
-      </React.Fragment>
+       <header>
+           <h1>{props.name}</h1>
+       </header>
    )
-
-}
+};
 
 export default Header;

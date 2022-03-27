@@ -1,14 +1,12 @@
 import React from "react";
 
-function About({bio, image}) {
+function About({about, image}) {
    return (
-      <React.Fragment>
-         <aside>
-            {image ? <img src={image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo" />}
-            <p>{bio}</p>
-         </aside>
-      </React.Fragment>
-   )
-}
-
-export default About;
+      <aside>
+         { image ? <img src={image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo" /> }
+         <p>{about}</p>
+      </aside>
+      )
+   };
+   
+   export default About;

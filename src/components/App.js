@@ -4,15 +4,15 @@ import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList"
 
-console.log(blogData);
+// console.log(blogData);
 
 function App() {
   return (
      <React.Fragment>
          <div className="App">
-            <Header blogName={blogData.name} />
-            <About bio={blogData.about} image={blogData.image} />
-            <ArticleList articles={blogData.posts} />
+            <Header name={blogData.name} />
+            <About about={blogData.about} image={blogData.image} />
+            <ArticleList posts={blogData.posts} />
          </div>
      </React.Fragment>
   );
